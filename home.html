@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Videos</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>VideoNet</h1>
+    </header>
+
+    <main>
+        <section class="category">
+            <h2>Turismo en Chile</h2>
+            <div class="video-grid">
+                <!-- Video 1 -->
+                <div class="video-card" onclick="openModal('reportaje 1')">
+                    
+                    <img src="images/foto_cabanas.jpg" alt="video 1">
+                    <h3>Cabañas en Bucalemu</h3>
+                    <p>Te esperan todo los días del año</p></a>
+                </div>
+                <!-- Video 2 -->
+                <div class="video-card" onclick="openModal('reportaje 2')">
+                    
+                    <img src="images/foto_playa.jpg" alt="video 2">
+                    <h3>Termas Vergara</h3>
+                    <p>Una breve sinopsis de las termas</p></a>
+                </div>
+                <!-- Video 3 -->
+                <div class="video-card" onclick="openModal('reportaje 3')">
+                    
+                    <img src="images/foto_sidra.jpg" alt="video 3">
+                    <h3>Maja de Manzanas</h3>
+                    <p>Una breve sinopsis de la sidra</p></a>
+                </div>
+                 <!-- Video 4 -->
+                 <div class="video-card" onclick="openModal('reportaje 4')">
+                    
+                    <img src="images/foto_escritora.jpg" alt="video 4">
+                    <h3>Historias de Suspenso</h3>
+                    <p>Una breve sinopsis de una escritora</p></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2>Turismo Internacional</h2>
+            <div class="video-grid">
+                <!-- Video 5 -->
+                <div class="video-card" onclick="openModal('turismo 5')">
+                    <img src="images/foto_venecia.jpg" alt="video 5">
+                    <h3>Venecia, inmortal y misteriosa</h3>
+                    <p>Una breve sinopsis de Venecia</p>
+                </div>
+                <!-- Video 6 -->
+                <div class="video-card" onclick="openModal('turismo 6')">
+                    <img src="images/foto_restaurante.jpg" alt="video 6">
+                    <h3>La mejor comida</h3>
+                    <p>Sinopsis del mejor chef</p>
+                </div>
+                 <!-- Video 7 -->
+                 <div class="video-card" onclick="openModal('turismo 7')">
+                    <img src="images/foto_valle.jpg" alt="video 7">
+                    <h3>Viajes maravillosos</h3>
+                    <p>Una breve sinopsis del Valle</p>
+                </div>
+                <!-- Video 8 -->
+                <div class="video-card" onclick="openModal('turismo 8')">
+                    <img src="images/foto_puente.jpg" alt="video 8">
+                    <h3>El puente colgante más largo</h3>
+                    <p>Una breve sinopsis del Puente Chacao</p>
+                </div>
+            </div>
+        </section>
+
+       
+        
+    </main>
+
+    <!-- Modal para mostrar los videos -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="videoFrame" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
